@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a Value</label>&nbsp;&nbsp;
+    <input id = "inputValueId"><br><br>
+    <button onclick="generateAStr()">Generate String</button>
+    <p id = "resultString"></p>
+</body>
+<script>
+    function generateAStr(){
+var inputValue = document.getElementById("inputValueId").value;
+var valueToStr = inputValue.toString();
+document.getElementById("resultString").innerHTML = valueToStr;
+    }
+</script>
+</html>  

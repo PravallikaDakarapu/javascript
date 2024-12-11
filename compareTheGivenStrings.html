@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a String</label>
+    <input id= "inputStringFieldId1"><br><br>
+    <label>Enter a String</label>
+    <input id = "inputStringFieldId2"><br><br>
+    <button onclick = "compareString()">Compare</button>
+    <p id = "compareStringResult"></p>
+</body>
+<script>
+function compareString(){
+var str1 = document.getElementById("inputStringFieldId1").value;
+var str2 = document.getElementById("inputStringFieldId2").value;
+var result = str1.localeCompare(str2); 
+switch(result){
+    case -1:
+    document.getElementById("compareStringResult").innerHTML = "String1 is lower than String2 ";
+    break;
+    case 0:
+    document.getElementById("compareStringResult").innerHTML = "String1 and String2 are equal ";
+    break;
+    case 1:
+    document.getElementById("compareStringResult").innerHTML = "String2 is lower than String1 ";
+    break;
+    default:
+    document.getElementById("compareStringResult").innerHTML = "Enter proper value";
+}
+}
+</script>
+</html>

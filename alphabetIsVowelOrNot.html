@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter an alphabet</label>
+    <input id = "alphabetValueId"><br><br>
+    <button onclick="findVowels()">Enter</button>
+    <p id = "vowelOrNot"></p>
+</body>
+<script>
+function findVowels(){
+    var enteredAlphabet = document.getElementById("alphabetValueId").value;
+    var loweredAlphabet  = enteredAlphabet.toLowerCase();
+    if(loweredAlphabet.length>1){
+    document.getElementById("vowelOrNot").innerHTML = "Please enter an alphabet";
+    }
+    else{
+        switch (loweredAlphabet){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                document.getElementById("vowelOrNot").innerHTML = "Given character [" +enteredAlphabet+"] is a Vowel";
+            break;
+            default:
+                document.getElementById("vowelOrNot").innerHTML = "Given character [" +enteredAlphabet+ "] is a Consonant";
+        }
+    }
+}
+</script>
+</html>

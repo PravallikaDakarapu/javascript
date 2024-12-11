@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "studentProperties"></p>
+</body>
+<script>
+    var student = {
+        name : "Ravi",
+        age:"13",
+        rollno:"06407",
+        class:"8th Grade",
+        section:"B-Section"
+     };
+     delete student.age;
+     document.getElementById("studentProperties").innerHTML =student.name+ " is "+ student.age+" years old ";
+</script>
+</html>

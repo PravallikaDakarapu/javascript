@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a string</label>&nbsp&nbsp&nbsp
+    <input id = "inputStringFieldId"><br><br>
+     <label>Enter an alphabet</label>&nbsp
+    <input id = "inputAlphabetFieldId"><br><br>
+    <button onclick="countTheLetters()">Count</button>
+    <p id = "demo"></p>
+</body>
+<script>
+function countTheLetters(){
+var inputString = document.getElementById("inputStringFieldId").value;
+var inputLetter = document.getElementById("inputAlphabetFieldId").value;
+debugger;
+var regex = new RegExp(inputLetter, 'gi');
+var myarry = inputString.match(regex);
+var a = 0;
+if(myarry != null) {
+    a = myarry.length;
+    document.getElementById("demo").innerHTML = a;
+}
+//var a = myarry != null ? myarry.length : 0;
+
+//const myArr = text.match(/ain/gi);
+}
+</script>
+</html>

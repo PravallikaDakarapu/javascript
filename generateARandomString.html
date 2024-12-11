@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a Value</label>&nbsp
+    <input id = "inputValueFieldId"><br><br>
+    <button onclick="generateString()">Generate String</button>
+    <p id="demo"></p>
+</body>
+<script>
+     function generateString() {
+var characters= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+var charactersLength = characters.length;
+var result = " ";
+for(var i = 0;i < charactersLength;i++){
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   
+}
+document.getElementById("demo").innerHTML = result;
+    }
+</script>
+<!-- function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
+
+console.log(generateString(5))
+ -->
+ </html> 

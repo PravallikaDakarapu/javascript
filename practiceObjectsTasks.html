@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+</body>
+<script>
+    var person1 = {
+         firstName :"Ravi",
+         lastName : "John",
+         age : 24,
+         eyeColor : "Brown"
+        }
+        
+    var person2 ={
+        firstName : "Deepak",lastName : "Rao"
+    }
+     var text = Object.assign({},person1,person2);
+     //let text = Object.entries(person1);
+ 
+     //console.log(text);
+
+
+   /*function Person(first,last,age,eye){
+        this.firstName = first;         
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    const employee = new Person("Ravi","John",23,"Brown");
+   
+    document.getElementById("demo").innerHTML = employee.firstName; */
+ 
+
+</script>
+</html>
